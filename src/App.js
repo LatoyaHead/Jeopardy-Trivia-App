@@ -10,7 +10,7 @@ function App() {
 
   const getQuestion = async () => {
     try {
-      const res = await fetch('http://jservice.io/api/random')
+      const res = await fetch('https://jservice.io/api/random')
       const data = await res.json()
       console.log(data);
       setQuestion(data[0]) //sets the question data
