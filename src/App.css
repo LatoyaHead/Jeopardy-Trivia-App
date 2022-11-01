@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: rgb(79, 79, 243);
+  font-family: 'Times New Roman', Times, serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.welcome {
   color: white;
+  margin-top: 120px;
+  font-size: 35px;
 }
-
-.App-link {
-  color: #61dafb;
+.score, .play, .category, .points, .answer {
+  color: rgb(236, 201, 27);
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  text-transform: capitalize;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.question1 {
+  color: rgb(236, 201, 27);
+  font-size: 35px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.button-container, .question-container {
+ display: flex;
+ flex-direction: row;
+ gap: 10px;
+}
+.btn1 {
+ background-color: pink;
+ border-radius: 5px;
+ border: none;
+ width: 200px; 
+ font-size: 25px;
+ padding: 10px;
+}
+.btn2 {
+  background-color: blueviolet;
+  border-radius: 5px;
+  border: none;
+  width: 200px; 
+  font-size: 25px;
+  padding: 10px;
+}
+.btn3 {
+  background-color: red;
+  border-radius: 5px;
+  border: none;
+  width: 200px; 
+  font-size: 25px;
+  padding: 10px;
+}
+.question {
+  background-color: rgba(245, 224, 61, 0.921);
+  border-radius: 5px;
+  border: none;
+  width: 200px; 
+  font-size: 25px;
+  padding: 10px;
+}
+.question-btn {
+  background-color: rgb(32, 32, 190);
+  border: none;
+  padding: 15px; 
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+.wrapper {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+@media (max-width: 800px) {
+  .button-container {
+    flex-direction: column;
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  .btn1, .btn2, .btn3, .question {
+    width: 100%;
+    font-size: 30px;
+    height: auto;
+    padding: 10px;
+  }
+  .question-container {
+    width: 100%;
+  }
+  .wrapper {
+    width: 90%;
   }
 }
